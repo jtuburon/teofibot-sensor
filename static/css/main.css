@@ -1,0 +1,21 @@
+.dataPlot{
+    border: 1px solid #dddddd;
+    border-radius:4px;
+    background-color:#fcfcfc;
+	width: 600px;
+}
+
+#temperaturePlot{
+	float:left;
+}
+
+
+#humidity_section{
+	clear:left;
+}
+
+#thermometer{
+	width: 100px;
+	height: 400px;	
+	float:left;
+}

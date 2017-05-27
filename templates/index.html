@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+
+  <script src="/static/js/jquery-3.1.0.js"></script>
+  <script src="/static/js/vis.js"></script>
+  <script src="/static/js/main.js"></script>
+  <script src="/static/js/svg.js"></script>
+  <script src="/static/js/thermometer.js"></script>
+  
+  <script src="/static/js/socket.io.js"></script>
+  
+  <link href="/static/css/vis.css" rel="stylesheet" type="text/css" />
+  <link href="/static/css/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <h1>TeofiBot - Weather conditions</h1>
+  <label for="strategy">Strategy:</label>
+  <select id="strategy">
+    <option value="continuous" selected>Continous</option>
+    <option value="discrete">Discrete</option>
+    <option value="static">Static</option>
+  </select>
+  <input type="button" value="View Data" onclick="javascript:init()" >
+  <div id="temperature_section">
+    <h3>Temperature</h3>
+    <div id="thermometer"></div>
+    <div id="temperaturePlot" class="dataPlot"></div>  
+    <br style="clear: left;"/>
+  </div>
+
+  <div id="humidity_section">
+    <h3>Humidity</h3>
+    <div id="humidityPlot" class="dataPlot"></div>
+  </div>
+  
+  
+</body>
+</html>
