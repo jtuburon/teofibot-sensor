@@ -17,7 +17,7 @@ class SensorReader(Thread):
 		sensor, gpio= Adafruit_DHT.DHT11, 4
 		while True:
 			humidity, temperature = Adafruit_DHT.read_retry(sensor, gpio)
-			url="http://127.0.0.1:5000/sensor/set_data?t=%d&h=%d" % (temperature, humidity)
+			url="http://127.0.0.1:5000/sensor/set_data?t=%f&h=%f" % (temperature, humidity)
 			r = requests.get(url)
 			print temperature
 			time.sleep(2)

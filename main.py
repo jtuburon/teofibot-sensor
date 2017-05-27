@@ -30,8 +30,8 @@ def export_temperature():
 
 @app.route("/sensor/set_data")
 def set_data():
-	temperature = int(request.args.get('t', '0'))
-	humidity = int(request.args.get('h', '0'))
+	temperature = round(float(request.args.get('t', '0')),2)
+	humidity = round(float(request.args.get('h', '0')),2)
 	sensor_data={
 		"humidity": humidity, 
 		"temperature": temperature
