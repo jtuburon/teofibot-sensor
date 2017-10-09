@@ -17,13 +17,9 @@ class SensorReader(Thread):
 		sensor, gpio= Adafruit_DHT.DHT11, 4
 		while True:
 			humidity, temperature = Adafruit_DHT.read_retry(sensor, gpio)
-			url="http://127.0.0.1:5000/sensor/set_data?t=%s&h=%s" % (temperature, humidity)
+			url="http://teofibot-sensor.teofilismo.com/sensor/set_data?t=%s&h=%s" % (temperature, humidity)
 			r = requests.get(url)
-			print temperature
 			time.sleep(2)
-
-
-
 
 @manager.command
 def start_sensor():

@@ -24678,3 +24678,81 @@ ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries ex
 127.0.0.1 - - [26/May/2017 21:11:43] "GET /sensor/set_data?t=15&h=92 HTTP/1.1" 200 143 0.000499
 (2138) accepted ('127.0.0.1', 50354)
 127.0.0.1 - - [26/May/2017 21:11:45] "GET /sensor/set_data?t=10&h=58 HTTP/1.1" 200 143 0.000531
+WebSocket transport not available. Install eventlet or gevent and gevent-websocket for improved performance.
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+WebSocket transport not available. Install eventlet or gevent and gevent-websocket for improved performance.
+ * Debugger is active!
+ * Debugger pin code: 300-979-837
+192.168.0.19 - - [09/Oct/2017 17:17:13] "GET /socket.io/?EIO=3&transport=polling&t=1507569433645-144 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:17:39] "POST /socket.io/?EIO=3&transport=polling&t=1507569459644-146&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:17:39] "GET /socket.io/?EIO=3&transport=polling&t=1507569433811-145&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:18:05] "POST /socket.io/?EIO=3&transport=polling&t=1507569485644-148&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:18:05] "GET /socket.io/?EIO=3&transport=polling&t=1507569459727-147&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:18:31] "POST /socket.io/?EIO=3&transport=polling&t=1507569511644-150&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:18:31] "GET /socket.io/?EIO=3&transport=polling&t=1507569485742-149&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:18:57] "POST /socket.io/?EIO=3&transport=polling&t=1507569537644-152&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:18:57] "GET /socket.io/?EIO=3&transport=polling&t=1507569511688-151&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:19:23] "POST /socket.io/?EIO=3&transport=polling&t=1507569563644-154&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:19:23] "GET /socket.io/?EIO=3&transport=polling&t=1507569537758-153&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:19:49] "POST /socket.io/?EIO=3&transport=polling&t=1507569589644-156&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:19:49] "GET /socket.io/?EIO=3&transport=polling&t=1507569563754-155&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:20:15] "POST /socket.io/?EIO=3&transport=polling&t=1507569615645-158&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:20:15] "GET /socket.io/?EIO=3&transport=polling&t=1507569589686-157&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+WebSocket transport not available. Install eventlet or gevent and gevent-websocket for improved performance.
+Traceback (most recent call last):
+  File "run.py", line 4, in <module>
+    socketio.run(app, host='0.0.0.0')
+  File "/usr/local/lib/python2.7/dist-packages/flask_socketio/__init__.py", line 481, in run
+    use_reloader=use_reloader, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/flask/app.py", line 841, in run
+    run_simple(host, port, self, **options)
+  File "/usr/lib/python2.7/dist-packages/werkzeug/serving.py", line 691, in run_simple
+    s.bind((hostname, port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 98] Address already in use
+192.168.0.19 - - [09/Oct/2017 17:20:41] "POST /socket.io/?EIO=3&transport=polling&t=1507569641644-160&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:20:41] "GET /socket.io/?EIO=3&transport=polling&t=1507569615769-159&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:21:07] "POST /socket.io/?EIO=3&transport=polling&t=1507569667644-162&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:21:07] "GET /socket.io/?EIO=3&transport=polling&t=1507569641686-161&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:21:33] "POST /socket.io/?EIO=3&transport=polling&t=1507569693644-164&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:21:33] "GET /socket.io/?EIO=3&transport=polling&t=1507569667684-163&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:21:59] "POST /socket.io/?EIO=3&transport=polling&t=1507569719644-166&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:21:59] "GET /socket.io/?EIO=3&transport=polling&t=1507569693671-165&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:22:25] "POST /socket.io/?EIO=3&transport=polling&t=1507569745644-168&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:22:25] "GET /socket.io/?EIO=3&transport=polling&t=1507569719700-167&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:22:51] "POST /socket.io/?EIO=3&transport=polling&t=1507569771644-170&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:22:51] "GET /socket.io/?EIO=3&transport=polling&t=1507569745754-169&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:23:17] "POST /socket.io/?EIO=3&transport=polling&t=1507569797644-172&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:23:17] "GET /socket.io/?EIO=3&transport=polling&t=1507569771748-171&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:23:43] "POST /socket.io/?EIO=3&transport=polling&t=1507569823646-174&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:23:43] "GET /socket.io/?EIO=3&transport=polling&t=1507569797681-173&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:24:09] "POST /socket.io/?EIO=3&transport=polling&t=1507569849644-176&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:24:09] "GET /socket.io/?EIO=3&transport=polling&t=1507569823771-175&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:24:35] "POST /socket.io/?EIO=3&transport=polling&t=1507569875645-178&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:24:35] "GET /socket.io/?EIO=3&transport=polling&t=1507569849758-177&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:25:01] "POST /socket.io/?EIO=3&transport=polling&t=1507569901645-180&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:25:01] "GET /socket.io/?EIO=3&transport=polling&t=1507569875756-179&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:25:27] "POST /socket.io/?EIO=3&transport=polling&t=1507569927644-182&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:25:27] "GET /socket.io/?EIO=3&transport=polling&t=1507569901695-181&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:25:53] "POST /socket.io/?EIO=3&transport=polling&t=1507569953645-184&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:25:53] "GET /socket.io/?EIO=3&transport=polling&t=1507569927688-183&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:26:19] "POST /socket.io/?EIO=3&transport=polling&t=1507569979644-186&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:26:19] "GET /socket.io/?EIO=3&transport=polling&t=1507569953864-185&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:26:45] "POST /socket.io/?EIO=3&transport=polling&t=1507570005644-188&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:26:45] "GET /socket.io/?EIO=3&transport=polling&t=1507569979727-187&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:27:11] "POST /socket.io/?EIO=3&transport=polling&t=1507570031644-190&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:27:11] "GET /socket.io/?EIO=3&transport=polling&t=1507570005830-189&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:27:37] "POST /socket.io/?EIO=3&transport=polling&t=1507570057644-192&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:27:37] "GET /socket.io/?EIO=3&transport=polling&t=1507570031729-191&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:28:03] "POST /socket.io/?EIO=3&transport=polling&t=1507570083644-194&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:28:03] "GET /socket.io/?EIO=3&transport=polling&t=1507570057733-193&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:28:29] "POST /socket.io/?EIO=3&transport=polling&t=1507570109644-196&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:28:29] "GET /socket.io/?EIO=3&transport=polling&t=1507570083768-195&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:28:55] "POST /socket.io/?EIO=3&transport=polling&t=1507570135644-198&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:28:55] "GET /socket.io/?EIO=3&transport=polling&t=1507570109715-197&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:29:21] "POST /socket.io/?EIO=3&transport=polling&t=1507570161644-200&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:29:21] "GET /socket.io/?EIO=3&transport=polling&t=1507570135759-199&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:29:47] "POST /socket.io/?EIO=3&transport=polling&t=1507570187644-202&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
+192.168.0.19 - - [09/Oct/2017 17:29:47] "GET /socket.io/?EIO=3&transport=polling&t=1507570161715-201&sid=020e852faf1945f1bf82e240a3485194 HTTP/1.1" 200 -
